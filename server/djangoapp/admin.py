@@ -19,5 +19,5 @@ class CarModelAdmin(admin.ModelAdmin):
     search_fields = ['name', 'car_make__name']
 
 # Register models here
-admin.site.register(CarMake, CarMakeAdmin)
-admin.site.register(CarModel, CarModelAdmin)
+admin.site.register(CarMake)
+admin.site.register(CarModel)
