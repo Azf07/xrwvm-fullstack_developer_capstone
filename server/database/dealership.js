@@ -1,8 +1,8 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var dealerships = new Schema({
+const dealerships = new Schema({
 	id: {
     type: Number,
     required: true,

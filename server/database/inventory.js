@@ -1,30 +1,30 @@
-var Int32 = require('mongodb').Int32;
-var mongoose = require('mongoose');
+const { Int32 } = require('mongodb');
+const mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var cars = new Schema({
-  dealer_id: {
+const cars = new Schema({
+dealer_id: {
+    type: Number,
+    required: true
+},
+make: {
+    type: String,
+    required: true
+  },
+model: {
+    type: String,
+    required: true
+  },
+bodyType: {
+    type: String,
+    required: true
+  },
+year: {
     type: Number,
     required: true
   },
-  make: {
-    type: String,
-    required: true
-  },
-  model: {
-    type: String,
-    required: true
-  },
-  bodyType: {
-    type: String,
-    required: true
-  },
-  year: {
-    type: Number,
-    required: true
-  },
-  mileage: {
+mileage: {
     type: Number,
     required: true
   }
