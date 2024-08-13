@@ -75,6 +75,7 @@ const Dealer = () => {
       <div style={{marginTop:"10px"}}>
         <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
         <h4 style={{color:"grey"}}>{dealer.city}, {dealer.address}, Zip - {dealer.zip}, {dealer.state} </h4>
+        <a href={`/searchcars/${id}`} style={{color:"blue", textDecoration:"underline"}}>Search Cars</a>
       </div>
       <div className="reviews_panel">
         {reviews.length === 0 && unreviewed === false ? (

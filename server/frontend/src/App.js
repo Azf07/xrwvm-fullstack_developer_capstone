@@ -5,6 +5,7 @@ import Register from "./components/Register/Register";
 import Dealers from "./components/Dealers/Dealers";
 import Dealer from "./components/Dealers/Dealer"
 import PostReview from "./components/Dealers/PostReview"
+import SearchCars from "./components/Dealers/SearchCars";	
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
 
       {/* You can add more routes here for other components */}
        <Route path="/postreview/:id" element={<PostReview/>} />
+
+      {/* You can add more routes here for other components */}
+      <Route path="/searchcars/:id" element={<SearchCars />} />
 
     </Routes>
   );
