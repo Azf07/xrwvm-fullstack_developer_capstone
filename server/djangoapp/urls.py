@@ -23,14 +23,22 @@ urlpatterns = [
 
     # Path for getting dealerships
     path(route='get_dealers', view=views.get_dealerships, name='get_dealers'),
-        path(route='get_dealers/<str:state>', view=views.get_dealerships, name='get_dealers_by_state'),
+    path(
+        route='get_dealers/<str:state>',
+        view=views.get_dealerships,
+        name='get_dealers_by_state'
+    ),
 
     # Path for getting dealer details
     path(route='dealer/<int:dealer_id>', view=views.get_dealer_details, name='dealer_details'),
 
     # Path for getting reviews of a specific dealer by ID
-    path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews, name='dealer_reviews_by_id'),
+    path(
+        route='reviews/dealer/<int:dealer_id>',
+        view=views.get_dealer_reviews,
+        name='dealer_reviews_by_id'
+    ),
 
-    path(route='get_cars', view=views.get_cars, name ='getcars'),
+    path(route='get_cars', view=views.get_cars, name='getcars'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
